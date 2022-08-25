@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #F3F5FC;
+    min-height: 100%;
+}
+
+.container {
+    box-shadow: 2px 2px 9px 0px rgb(0, 0, 0, 0.9);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.header {
+    grid-area: header;
+    background-color: a#F3F5FC;
+}
+
+.main {
+    box-shadow: 1px 1px 6px 0px rgb(0, 0, 0, 0.7);
+    grid-area: main;
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin-right: 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #F3F5FC;
+}
+
+.area {
+    width: 90%;
+    height: 80%;
+    color: #0A3871;
+    background-color: #F3F5FC;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    resize: none;
+    font-size: 25px;
+}
+
+.botones {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.encriptar, .desencriptar {
+    width: 25%;
+    height: 40px;
+}
+
+.encriptar {
+    border-radius: 23px;
+    border-color: #0A3871;
+    background-color: #0A3871;
+    color: #fcfcfc;
+}
+
+.desencriptar {
+    border-radius: 23px;
+    border-color: #0A3871;
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.img_muneco {
+    margin-top: 70px;
+    padding: auto;
+}
+
+.contenedor-h3 {
+    margin-top: 0;
+    width: 100%;
+    height: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    color: #343A40;
+}
+
+.contenedor-p  {
+    margin-top: 0;
+    width: 100%;
+    height: 35%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    color: #495057;
+}
+
+.lector {
+    margin-top: 10px;
+    width: 100%;
+    height: 75%;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.parrafo {
+    width: 100%;
+    height: 70%;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    resize: none;
+    font-size: 25px;
+}
+
+.btn-copiar {
+    text-align: center;
+}
+
+.copiar {
+    width: 90%;
+    height: 40px;
+    border-radius: 23px;
+    border-color: #0A3871;
+    background-color: #FFFFFF;
+    color: #0A3871;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #F3F5FC;
+    color: #0a3871;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template: 
+    "header" 100px
+    "sidebar" auto
+    "main"   100px
+    "footer" 100px;
+}
+
+.ocultar {
+    display: none;
+}
+
+@media (min-width: 500px) {
+    .container {
+        grid-template: 
+            "header   header" 100px
+            "sidebar  main"   auto
+            "footer   footer" 100px /
+            auto 400px; 
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        grid-template: 
+            "header   header  ." 50px
+            "sidebar  sidebar main"   auto
+            "footer   footer  footer" 20px /
+            auto 1100px; 
+    }
+}
