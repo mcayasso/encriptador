@@ -96,6 +96,6 @@ const button = document.querySelector(".copiar");
 const input = document.querySelector(".parrafo");
 
 button.addEventListener("click",function(){
-    document.execCommand("selectAll");
+    document.execCommand(".parrafo");
     document.execCommand("copy");
-})
+});
